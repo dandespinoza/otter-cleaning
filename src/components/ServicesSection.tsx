@@ -6,7 +6,7 @@ interface ServicesSectionProps {
   onSelect: () => void;
 }
 
-// Prices match booking calculator (5% discounted, starting at Studio/1 bath)
+// Prices match booking calculator (starting at Studio/1 bath)
 const services = [
   {
     id: "standard",
@@ -15,7 +15,7 @@ const services = [
     description: "Routine cleaning to keep your home fresh and tidy. Perfect for recurring service.",
     checklist: "40+ Tasks",
     features: ["Surface cleaning", "Vacuum & mop", "Kitchen & bath sanitization"],
-    price: "$105",
+    price: "$110",
   },
   {
     id: "standard-plus",
@@ -24,7 +24,7 @@ const services = [
     description: "Enhanced attention to detail including baseboards, high-touch areas, and edges.",
     checklist: "55+ Tasks",
     features: ["Everything in Standard", "Baseboard dusting", "Detail work"],
-    price: "$143",
+    price: "$150",
     popular: true,
   },
   {
@@ -34,7 +34,7 @@ const services = [
     description: "Comprehensive cleaning including appliance interiors, windows, and grout work.",
     checklist: "67 Tasks",
     features: ["Everything in Std Plus", "Appliance interiors", "Interior windows"],
-    price: "$277",
+    price: "$291",
   },
   {
     id: "move",
@@ -43,7 +43,7 @@ const services = [
     description: "Inspection-ready cleaning for vacant properties. Behind and under everything.",
     checklist: "67 Tasks",
     features: ["Everything in Deep", "Behind appliances", "Empty closets"],
-    price: "$277",
+    price: "$291",
   },
 ];
 

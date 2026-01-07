@@ -6,14 +6,14 @@ import { Card } from "@/components/ui/card";
 import { Check, X, Sparkles, ArrowRight } from "lucide-react";
 import { SEO, serviceSchema } from "@/components/SEO";
 
-// Prices match booking calculator (5% discounted, starting at Studio/1 bath)
+// Prices match booking calculator (starting at Studio/1 bath)
 const services = [
   {
     id: "standard",
     title: "Standard",
     tagline: "Our go-to clean",
     description: "Core maintenance cleaning designed to keep your home fresh and tidy on a regular basis.",
-    price: "$105",
+    price: "$110",
     time: "~2 hours",
     features: [
       "Surface cleaning throughout",
@@ -28,7 +28,7 @@ const services = [
     title: "Standard Plus",
     tagline: "Enhanced essentials",
     description: "Enhanced version with additional attention to detail and high-touch areas.",
-    price: "$143",
+    price: "$150",
     time: "~3 hours",
     popular: true,
     features: [
@@ -45,7 +45,7 @@ const services = [
     title: "Deep Clean",
     tagline: "Full reset",
     description: "Comprehensive cleaning targeting hard-to-reach and neglected areas for a complete refresh.",
-    price: "$277",
+    price: "$291",
     time: "~5 hours",
     features: [
       "Everything in Standard Plus",
@@ -61,7 +61,7 @@ const services = [
     title: "Move In/Out",
     tagline: "Turnover ready",
     description: "Specialized cleaning optimized for vacant homes with inspection-ready results.",
-    price: "$277",
+    price: "$291",
     time: "~5+ hours",
     features: [
       "Everything in Deep Clean",
@@ -74,16 +74,16 @@ const services = [
   },
 ];
 
-// Add-on prices match booking calculator (5% discounted)
+// Add-on prices
 const addOns = [
-  { name: "Inside Fridge", price: "$43", unit: "per unit" },
-  { name: "Inside Oven", price: "$43", unit: "per oven" },
-  { name: "Inside Cabinets", price: "$43", unit: "flat rate" },
-  { name: "Interior Windows", price: "$57", unit: "flat rate" },
-  { name: "Laundry", price: "$43", unit: "per load" },
-  { name: "Balcony", price: "$57", unit: "flat rate" },
-  { name: "Basement", price: "$81", unit: "flat rate" },
-  { name: "Closet Organization", price: "$48", unit: "flat rate" },
+  { name: "Inside Fridge", price: "$45", unit: "per unit" },
+  { name: "Inside Oven", price: "$45", unit: "per oven" },
+  { name: "Inside Cabinets", price: "$45", unit: "flat rate" },
+  { name: "Interior Windows", price: "$60", unit: "flat rate" },
+  { name: "Laundry", price: "$45", unit: "per load" },
+  { name: "Balcony", price: "$60", unit: "flat rate" },
+  { name: "Basement", price: "$85", unit: "flat rate" },
+  { name: "Closet Organization", price: "$50", unit: "flat rate" },
 ];
 
 export default function Services() {
@@ -97,7 +97,7 @@ export default function Services() {
     <div className="min-h-screen bg-background">
       <SEO
         title="House Cleaning Services & Pricing"
-        description="Compare our four cleaning service tiers: Standard ($105), Standard Plus ($143), Deep Clean ($277), and Move In/Out ($277). Professional house cleaning in NYC, Long Island & New Jersey with transparent pricing."
+        description="Compare our four cleaning service tiers: Standard ($110), Standard Plus ($150), Deep Clean ($291), and Move In/Out ($291). Professional house cleaning in NYC, Long Island & New Jersey with transparent pricing."
         keywords="house cleaning prices, cleaning service cost, deep cleaning service, move out cleaning cost, maid service pricing, professional cleaning rates NYC, Long Island cleaning prices"
         canonicalUrl="/services"
         structuredData={serviceSchema}

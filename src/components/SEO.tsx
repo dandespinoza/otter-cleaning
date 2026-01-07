@@ -173,7 +173,7 @@ export const localBusinessSchema = {
   },
 };
 
-// Prices match booking calculator (5% discounted, starting at Studio/1 bath)
+// Prices match booking calculator (starting at Studio/1 bath)
 export const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -199,7 +199,7 @@ export const serviceSchema = {
               name: "Standard Cleaning",
               description: "Surface cleaning, vacuuming, mopping, kitchen and bathroom sanitization",
             },
-            price: "105.00",
+            price: "110.00",
             priceCurrency: "USD",
           },
         ],
@@ -215,7 +215,7 @@ export const serviceSchema = {
               name: "Standard Plus Cleaning",
               description: "Enhanced cleaning with baseboard dusting, high-touch sanitization, and edge vacuuming",
             },
-            price: "143.00",
+            price: "150.00",
             priceCurrency: "USD",
           },
         ],
@@ -231,7 +231,7 @@ export const serviceSchema = {
               name: "Deep Cleaning",
               description: "Comprehensive cleaning including interior windows, appliance interiors, cabinet cleaning, and grout removal",
             },
-            price: "277.00",
+            price: "291.00",
             priceCurrency: "USD",
           },
         ],
@@ -247,7 +247,7 @@ export const serviceSchema = {
               name: "Move In/Out Cleaning",
               description: "Complete property turnover cleaning with inspection-ready results",
             },
-            price: "277.00",
+            price: "291.00",
             priceCurrency: "USD",
           },
         ],

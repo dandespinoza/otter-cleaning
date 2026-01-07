@@ -42,14 +42,13 @@ const timeSlots = [
   "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM"
 ];
 
-// Pricing rates by cleaning type (5% discounted from standard rates)
+// Pricing rates by cleaning type
 // Formula: Base Price + (Bedrooms × Per Room Rate) + ((Bathrooms - 1) × Per Room Rate)
-// Original rates discounted by 5%: Standard ($110→$105, $41.50→$39.50), StdPlus ($150→$143, $45→$43), Deep ($291→$277, $58→$55)
 const serviceTypes = [
-  { id: "standard", label: "Standard", base: 105, perRoom: 39.50, description: "Core maintenance clean" },
-  { id: "standard-plus", label: "Standard Plus", base: 143, perRoom: 43.00, description: "Enhanced essentials" },
-  { id: "deep", label: "Deep Clean", base: 277, perRoom: 55.00, description: "Full reset" },
-  { id: "move", label: "Move In/Out", base: 277, perRoom: 55.00, description: "Turnover ready" },
+  { id: "standard", label: "Standard", base: 110, perRoom: 41.50, description: "Core maintenance clean" },
+  { id: "standard-plus", label: "Standard Plus", base: 150, perRoom: 45.00, description: "Enhanced essentials" },
+  { id: "deep", label: "Deep Clean", base: 291, perRoom: 58.00, description: "Full reset" },
+  { id: "move", label: "Move In/Out", base: 291, perRoom: 58.00, description: "Turnover ready" },
 ];
 
 const frequencies = [
@@ -59,16 +58,16 @@ const frequencies = [
   { id: "monthly", label: "Monthly", discount: 5 },
 ];
 
-// Add-on services with flat fees (5% discounted)
+// Add-on services with flat fees
 const addOns = [
-  { id: "fridge", label: "Inside Fridge", price: 43, unit: "per unit" },
-  { id: "oven", label: "Inside Oven", price: 43, unit: "per oven" },
-  { id: "cabinets", label: "Inside Cabinets", price: 43, unit: "flat rate" },
-  { id: "windows", label: "Interior Windows", price: 57, unit: "flat rate" },
-  { id: "laundry", label: "Laundry", price: 43, unit: "per load" },
-  { id: "balcony", label: "Balcony", price: 57, unit: "flat rate" },
-  { id: "basement", label: "Basement", price: 81, unit: "flat rate" },
-  { id: "closets", label: "Closet Organization", price: 48, unit: "flat rate" },
+  { id: "fridge", label: "Inside Fridge", price: 45, unit: "per unit" },
+  { id: "oven", label: "Inside Oven", price: 45, unit: "per oven" },
+  { id: "cabinets", label: "Inside Cabinets", price: 45, unit: "flat rate" },
+  { id: "windows", label: "Interior Windows", price: 60, unit: "flat rate" },
+  { id: "laundry", label: "Laundry", price: 45, unit: "per load" },
+  { id: "balcony", label: "Balcony", price: 60, unit: "flat rate" },
+  { id: "basement", label: "Basement", price: 85, unit: "flat rate" },
+  { id: "closets", label: "Closet Organization", price: 50, unit: "flat rate" },
 ];
 
 const accessMethods = [
